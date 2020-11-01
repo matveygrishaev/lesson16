@@ -1,4 +1,4 @@
-'use strick';
+'use strict';
 
 const myLesson = [
   {lesson: 1, type: 'basic', points: 2},
@@ -18,3 +18,11 @@ const myLesson = [
   {lesson: 15, type: 'additional', points: 1},
   {lesson: 16, type: 'additional', points: 7},
 ];
+
+for (let i = 0; i < myLesson.length; i++) {
+  if (myLesson[i].type === 'additional') {
+    delete myLesson[i];
+  } else {myLesson[i].points = myLesson[i].points / 2;}
+}
+
+console.log(myLesson);
