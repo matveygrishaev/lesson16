@@ -266,6 +266,7 @@ class AppData {
                 if (depositPercent.value.trim() > 100) {
                     alert("Введите корректное значение в поле проценты");
                     start.disabled = true;
+                    depositPercent.value = '';
                     return;
                 }
             });
