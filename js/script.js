@@ -268,6 +268,8 @@ class AppData {
                     start.disabled = true;
                     depositPercent.value = '';
                     return;
+                } else {
+                    start.disabled = false;
                 }
             });
 
